@@ -25,9 +25,15 @@ public class PersonalID {
             return false;
         if(id.charAt(4)!='3' && id.charAt(4)!='2' && id.charAt(4)!='1' && id.charAt(4)!='0' )
             return false;
+        if(id.charAt(4)=='0' && id.charAt(5)=='0')  
+            return false;
         if(id.charAt(2)=='1' && id.charAt(3)!='0' && id.charAt(3)!='1' && id.charAt(3)!='2')
             return false;
         if(id.charAt(2)=='0' && id.charAt(3)=='0')
+            return false;
+        if(id.charAt(2)=='5' && id.charAt(3)!='0')  
+            return false;
+        if(id.charAt(2)=='6' && id.charAt(3)!='0' && id.charAt(3)!='1' && id.charAt(3)!='2')  
             return false;
 
         if(cDigits==9)
